@@ -65,9 +65,12 @@ Sigue estos pasos para instalar el proyecto en tu máquina local:
 
 Clonar repositorio:
 
+```
 bash
-git clone https://github.com/tu-usuario/task-manager.git
+git clone https://github.com/DiegoOrtegaGarcia/To-Do-List.git
 cd task-manager
+```
+
 Instalar dependencias:
 
 bash
