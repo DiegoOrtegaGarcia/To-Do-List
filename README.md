@@ -1,152 +1,216 @@
-Task Manager - Sistema de Gestión de Tareas
-Aplicación profesional para gestionar tus tareas diarias
+````markdown
+# Task Manager - Sistema de Gestión de Tareas
 
-🚀 Características Principales
-✅ Gestión completa de tareas (crear, editar, eliminar, completar)
+![Task Manager Preview](#)
 
-📂 Organización por categorías con sistema de filtrado
+_Aplicación para gestionar tus tareas diarias_
 
-📅 Fechas límite configurables con recordatorios visuales
+## 🚀 Características Principales
 
-🔍 Búsqueda rápida y paginación de resultados
+-   ✅ **Gestión completa de tareas** (crear, editar, eliminar, completar)
 
-📊 Separación inteligente entre tareas activas y completadas
+-   📂 **Organización por categorías** con sistema de filtrado
 
-🔒 Sistema de autenticación seguro (registro y login de usuarios)
+-   📅 **Fechas límite configurables** con recordatorios visuales
 
-🌙 Modo oscuro elegante con diseño moderno
+-   🔍 **Búsqueda rápida** y paginación de resultados
 
-📱 Totalmente responsive (funciona en móviles, tablets y desktop)
+-   📊 **Separación inteligente** entre tareas activas y completadas
 
-🛠 Tecnologías Utilizadas
-Backend:
+-   🔒 **Sistema de autenticación seguro** (registro y login de usuarios)
 
-PHP 8.1+
+-   🌙 **Modo oscuro elegante** con diseño moderno
 
-Laravel 10
+-   📱 **Totalmente responsive** (funciona en móviles, tablets y desktop)
 
-MySQL/MariaDB
+## 🛠 Tecnologías Utilizadas
 
-Frontend:
+**Backend:**
 
-Tailwind CSS
+-   PHP 8.1+
 
-CSS3 con variables personalizadas
+-   Laravel 10
 
-JavaScript Vanilla
+-   MySQL/MariaDB
 
-Animaciones CSS
+**Frontend:**
 
-Herramientas:
+-   Tailwind CSS
 
-Vite (compilación de assets)
+-   CSS3 con variables personalizadas
 
-Eloquent ORM
+-   JavaScript Vanilla
 
-Blade Templating
+-   Animaciones CSS
 
-Laravel Breeze (autenticación)
+**Herramientas:**
 
-⚙️ Requisitos del Sistema
-PHP 8.1 o superior
+-   Vite (compilación de assets)
 
-Composer 2
+-   Eloquent ORM
 
-Node.js 16+
+-   Blade Templating
 
-Base de datos (MySQL, PostgreSQL o SQLite)
+-   Laravel Breeze (autenticación)
 
-Extensión PDO para PHP
+## ⚙️ Requisitos del Sistema
 
-Extensión mbstring para PHP
+-   PHP 8.1 o superior
 
-🖥 Instalación Local
+-   Composer 2
+
+-   Node.js 16+
+
+-   Base de datos (MySQL, PostgreSQL o SQLite)
+
+-   Extensión PDO para PHP
+
+-   Extensión mbstring para PHP
+
+## 🖥 Instalación Local
+
 Sigue estos pasos para instalar el proyecto en tu máquina local:
 
-Clonar repositorio:
+1. **Clonar repositorio:**
 
-```
-bash
+```bash
+
 git clone https://github.com/DiegoOrtegaGarcia/To-Do-List.git
+
 cd task-manager
 ```
+````
 
-Instalar dependencias:
+2. **Instalar dependencias:**
 
-bash
+```bash
+
 composer install
+
 npm install
-Configurar entorno:
 
-bash
+```
+
+3. **Configurar entorno:**
+
+```bash
+
 cp .env.example .env
+
 php artisan key:generate
-Configurar base de datos:
-Editar el archivo .env:
 
-env
+```
+
+4. **Configurar base de datos:**
+
+Editar el archivo `.env`:
+
+```env
+
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=nombre_bd
+
 DB_USERNAME=usuario_bd
+
 DB_PASSWORD=contraseña_bd
-Migrar base de datos:
 
-bash
+```
+
+5. **Migrar base de datos:**
+
+```bash
+
 php artisan migrate
-Compilar assets:
 
-bash
+```
+
+6. **Compilar assets:**
+
+```bash
+
 npm run build
-Iniciar servidor:
 
-bash
+```
+
+7. **Iniciar servidor:**
+
+```bash
+
 php artisan serve
+
+```
+
 Visita la aplicación en: http://localhost:8000
 
-🌐 Despliegue en Producción
-Subir archivos al servidor (excluyendo node_modules y .env)
+## 🌐 Despliegue en Producción
 
-Instalar dependencias:
+1. **Subir archivos al servidor** (excluyendo node_modules y .env)
 
-bash
+2. **Instalar dependencias:**
+
+```bash
+
 composer install --optimize-autoloader --no-dev
+
 npm install && npm run build
-Configurar archivo .env con datos de producción
 
-Generar clave de aplicación:
+```
 
-bash
+3. **Configurar archivo .env** con datos de producción
+
+4. **Generar clave de aplicación:**
+
+```bash
+
 php artisan key:generate
-Migrar base de datos:
 
-bash
+```
+
+5. **Migrar base de datos:**
+
+```bash
+
 php artisan migrate --force
-Optimizar la aplicación:
 
-bash
+```
+
+6. **Optimizar la aplicación:**
+
+```bash
+
 php artisan config:cache
-php artisan route:cache
-php artisan view:cache
-Configurar permisos:
 
-bash
+php artisan route:cache
+
+php artisan view:cache
+
+```
+
+7. **Configurar permisos:**
+
+```bash
+
 chmod -R 775 storage bootstrap/cache
-🤝 Contribuir
+
+```
+
+## 🤝 Contribuir
+
 Las contribuciones son bienvenidas. Sigue estos pasos:
 
-Haz un fork del proyecto
+1. Haz un fork del proyecto
 
-Crea tu rama feature (git checkout -b feature/awesome-feature)
+2. Crea tu rama feature (`git checkout -b feature/awesome-feature`)
 
-Haz commit de tus cambios (git commit -m 'Add awesome feature')
+3. Haz commit de tus cambios (`git commit -m 'Add awesome feature'`)
 
-Haz push a la rama (git push origin feature/awesome-feature)
+4. Haz push a la rama (`git push origin feature/awesome-feature`)
 
-Abre un Pull Request
+5. Abre un Pull Request
 
-📄 Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
-Task Manager © 2023 - Desarrollado con ❤️ usando Laravel
+## 📄 Licencia
