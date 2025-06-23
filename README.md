@@ -1,4 +1,4 @@
-````markdown
+```markdown
 # Task Manager - Sistema de Gestión de Tareas
 
 ![Task Manager Preview](#)
@@ -66,6 +66,7 @@ _Aplicación para gestionar tus tareas diarias_
 -   Extensión PDO para PHP
 
 -   Extensión mbstring para PHP
+```
 
 ## 🖥 Instalación Local
 
@@ -79,7 +80,6 @@ git clone https://github.com/DiegoOrtegaGarcia/To-Do-List.git
 
 cd task-manager
 ```
-````
 
 2. **Instalar dependencias:**
 
@@ -214,3 +214,5 @@ Las contribuciones son bienvenidas. Sigue estos pasos:
 5. Abre un Pull Request
 
 ## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
